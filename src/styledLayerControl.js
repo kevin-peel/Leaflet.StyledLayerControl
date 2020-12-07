@@ -383,7 +383,7 @@ L.Control.StyledLayerControl = L.Control.Layers.extend({
         L.DomEvent.on(input, 'click', this._onInputClick, this);
 
         var name = document.createElement('label');
-        name.innerHTML = '<label for="' + id + '">' + obj.name + '</label>';
+        name.innerHTML = ' <label for="' + id + '">' + obj.name + '</label>'; //Added one space
 
         label.appendChild(input);
         label.appendChild(name);
